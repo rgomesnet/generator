@@ -1,12 +1,5 @@
-**/bin/
-**/obj/
-**/.git/
-**/.vs/
-**/.vscode/
-infra
+bin/
+obj/
 **/Dockerfile*
 **/.dockerignore*
 **/.docker-compose*.yml
-**/.gitignore
-**/README.md
-**/LICENSE
