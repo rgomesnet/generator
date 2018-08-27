@@ -3,14 +3,14 @@ FROM microsoft/dotnet:2.1-sdk AS build-env
 WORKDIR /generator
 
 # restore
-COPY api/api.csproj ./api/
-RUN dotnet restore api/api.csproj
+COPY api/. ./api/
+RUN dotnet build api/api.csproj
 
-COPY tests/tests.csproj ./tests/
-RUN dotnet restore tests/tests.csproj
+COPY tests/. ./tests/
+RUN dotnet build tests/tests.csproj
 
 # copy src
-COPY . .
+#COPY . .
 
 # test
 ENV TEAMCITY_PROJECT_NAME=fake
