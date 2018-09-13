@@ -10,6 +10,7 @@ namespace tests
         [Fact]
         public void CountShouldControlNumberOfResults()
         {
+            // It is a comment
             var range = new Range { Count = 3 };
             var generated = range.Of(() => "");                       
             Assert.Equal(3, generated.Count());
