@@ -15,6 +15,7 @@ namespace api
         public static void Main(string[] args)
         {
             BuildWebHost(args).Run();
+            // It is a comment
         }
 
         public static IWebHost BuildWebHost(string[] args) =>
